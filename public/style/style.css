@@ -1,0 +1,435 @@
+.title {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 4px;
+    background-color: #eac278;
+    margin: 5px 0;
+}
+
+.form-floating {
+    margin-top: 20px;
+    color: #282828;
+}
+
+.form-floating label {
+    direction: rtl;
+    text-align: right;
+}
+
+.modal-content {
+    background-color: #282828;
+    direction: rtl;
+    color: white;
+}
+
+.modal-content h1 {
+    text-align: center;
+}
+
+.modal-content p {
+    text-align: right;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+.services-wrapper h2 {
+    margin-top: 10px;
+    margin: 0;
+}
+
+h2,
+h1 {
+    color: #eac278;
+    text-align: center;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+label {
+    right: 0;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.nav-item img {
+    width: 200%;
+
+}
+
+
+.btn {
+    color: #eac278;
+    text-align: center;
+    direction: rtl;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: #fff;
+    font-weight: 500;
+    border: 3px solid #eac278;
+    padding: 0 30px 3px 30px;
+    border-radius: 25px;
+    transition: all ease-out 150ms;
+    font-size: 18px;
+    cursor: pointer;
+    width: 50%;
+    margin: 0;
+}
+
+
+.logo {
+    width: 50%;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+
+    margin: 0;
+    background-color: #272727;
+}
+
+.services {
+    direction: rtl;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: #282828;
+    box-shadow: 0 3px 8px #0000002b;
+    padding: 30px 40px 40px 40px;
+    position: relative;
+    border: 3px solid #565656;
+    margin-bottom: 90px;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+    transition: all ease-out 150ms;
+    height: 250px;
+}
+
+.title-service {
+    margin: 0 40px;
+
+}
+
+
+.services-wrapper {
+    padding: 30px;
+    position: sticky;
+}
+
+
+.services:hover {
+    border: 3px solid #eac278;
+}
+
+.btn:hover {
+    background-color: #eac278;
+    color: white;
+}
+
+
+.content {
+    direction: rtl;
+    text-align: right;
+    color: #fff;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #242424;
+    position: relative;
+    width: 90%;
+    padding: 40px 10px;
+}
+
+.btn-close {
+    background-color: #eac278;
+}
+
+.modal h1 {
+    margin-left: auto;
+}
+
+/*------------------------------Navbar*--------------------*/
+
+
+.navbar .nav-item a.nav-link:hover {
+    color: white;
+}
+
+.navbar .nav-item a.nav-link {
+    color: #eac278;
+    background-color: #242424;
+    padding-right: 1rem;
+    
+
+}
+
+.navbar .navbar-brand {
+    padding: 0;
+}
+
+.navbar .navbar-brand img {
+    width: 224px;
+    height: 69px;
+    object-fit: contain;
+}
+
+.navbar .custom-btn {
+    color: #eac278;
+    text-align: center;
+    direction: rtl;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+    background-color: #fff;
+    font-weight: 500;
+    border: 3px solid #eac278;
+    padding: 6px 30px;
+    border-radius: 25px;
+    transition: all ease-out 150ms;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar .custom-btn:hover {
+    background-color: #eac278;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .navbar .custom-btn {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        margin: 0;
+
+    }
+
+    .navbar-toggler {
+
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0;
+    }
+
+    .navbar-btn.d-md-block {
+        display: none;
+    }
+
+    .nav-link.d-md-none {
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .navbar-collapse {
+        justify-content: flex-start;
+    }
+
+    .navbar-btn.d-md-block {
+        margin-right: auto;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .services {
+        height: 300px;
+    }
+}
+
+.container img {
+    margin-right: -20px;
+}
+
+/* ------------------------------Hero--------------------------- */
+.hero {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* Numbers */
+
+.numbers {
+    background-color: #eac278;
+    padding: 0;
+}
+
+.number-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.number {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    transition: color 0.5s;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+.text {
+    font-size: 18px;
+    color: white;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+
+}
+
+.numbers .content {
+    background-color: #eac278;
+    width: 100%;
+}
+
+
+/* -----------------------contact-us------------------ */
+.contact-form {
+    background: #242424;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+
+}
+
+.contact-form .form-control {
+    border-radius: 1rem;
+}
+
+.contact-form i {
+    padding: 5% 5%;
+}
+
+.contact-form form {
+    padding: 10%;
+}
+
+.contact-form form .row {
+    margin-bottom: -7%;
+}
+
+.contact-form h2 {
+    margin-bottom: 1%;
+    margin-top: -20%;
+    text-align: center;
+    color: #eac278;
+    ;
+}
+
+.btnContact {
+    text-align: center;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    margin-top: 1%;
+    background-color: #fff;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+    font-weight: 1000;
+    color: #eac278;
+    cursor: pointer;
+    border: 3px solid #eac278;
+    transition: all ease-out 150ms;
+
+}
+
+.contact-form p {
+    color: #eac278;
+    font-size: 2rem;
+}
+
+.btnContact:hover {
+    background-color: #eac278;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .btnContact {
+
+        width: 100%;
+        text-align: center;
+        border-radius: 1rem;
+        padding: 1.5%;
+        margin-top: 5%;
+        background-color: #fff;
+        font-family: 'Noto Sans Hebrew', sans-serif;
+        font-weight: 1000;
+        color: #eac278;
+        cursor: pointer;
+        /* Change the cursor to a pointer on hover (indicating interactivity) */
+        border: 3px solid #eac278;
+        /* Add a 3px solid border with color #eac278 */
+        transition: all ease-out 150ms;
+        /* Apply a smooth transition for all properties with 150ms duration */
+    }
+}
