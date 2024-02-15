@@ -1,8 +1,8 @@
-import express from "express";
-import nodemailer from "nodemailer";
-import dotenv from "dotenv";
-import connectDB from "./db/db.js";
-import Query from "./db/queryModel.js";
+const express = require("express");
+const nodemailer = require("nodemailer");
+const dotenv = require("dotenv");
+const connectDB = require("./db/db.js");
+const Query = require("./db/queryModel.js");
 
 dotenv.config();
 
@@ -49,6 +49,7 @@ app.post('/send-mail', (req, res) => {
     const checkConditions = req.body.checkConditions === '1' ? 'כן' : req.body.checkConditions === '2' ? 'לא' : 'לא ידוע';
 
     message = leadComeFrom + `יעוץ משכנתא\nהאם נחתם הסכם? ${agreement}\nהאם גובה המשכנתה מעל 75%? ${loanAmount}\nהאם תרצה שנבדוק שהתנאים של המשכנתה שלך טובים גם להיום? ${checkConditions}\nשם מלא: ${name}\nכתובת מייל: ${email}\nטלפון: ${phone}\n`;
+    mailOptions.to = "calcali@tlp-ins.co.il";
   } else if (modal === 'modal2') {
     subject = 'ליד החזרי מס';
     const taxPayment = req.body.taxPayment === '1' ? 'כן' : req.body.taxPayment === '2' ? 'לא' : 'לא ידוע';
@@ -59,6 +60,7 @@ app.post('/send-mail', (req, res) => {
     const stockMarketActivity = req.body.stockMarketActivity === '1' ? 'כן' : req.body.stockMarketActivity === '2' ? 'לא' : 'לא ידוע';
 
     message = leadComeFrom + `החזרי מס\nהאם אתה משלם מס בתלוש השכר שלך? ${taxPayment}\nהאם יצאת לחל"ת? ${abroadTrip}\nהאם החלפת מקום עבודה ב-6 שנים האחרונות? ${jobChange}\nהאם משכת קופת פנסיה או גמל בשנים האחרונות? ${pensionFund}\nהאם יש לך תואר אקדמאי? ${academicDegree}\nהאם יש לך פעילות בשוק ההון? ${stockMarketActivity}\nשם מלא: ${name}\nכתובת מייל: ${email}\nטלפון: ${phone}\n`;
+    mailOptions.to = "bmass@tlp-ins.co.il";
   }
   else if (modal == 'contact-us') {
     subject = 'שאילתה כללית';

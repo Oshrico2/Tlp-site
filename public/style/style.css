@@ -63,6 +63,7 @@ label {
 }
 
 
+
 .btn {
     color: #eac278;
     text-align: center;
@@ -83,6 +84,11 @@ label {
     cursor: pointer;
     width: 50%;
     margin: 0;
+}
+
+.btnHover{
+    background-color: #eac278;
+    color: white;
 }
 
 
@@ -289,9 +295,19 @@ body {
     }
 }
 
-.container img {
-    margin-right: -20px;
+
+.form-control:focus ,.form-select:focus{
+    border:3px solid #eac278;
 }
+
+.form-select option{
+    background-color: #212529; 
+    color: #fff;
+}
+
+/* .container img {
+    margin-right: -20px;
+} */
 
 /* ------------------------------Hero--------------------------- */
 .hero {
@@ -318,6 +334,19 @@ body {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 30px;
+}
+.ashmoret-logo{
+    width: 35%;
+    height: 20%;
+    opacity: 85%;
+    border-radius: 20%;
+    border-style:double;
+    border-width: 5px;
+    box-shadow: 2px 2px 20px #eac278;
+}
+
+.ashmoret-logo:hover{
+    opacity: 100%;
 }
 
 
@@ -364,7 +393,7 @@ body {
 }
 
 .contact-form .form-control {
-    border-radius: 1rem;
+    border-radius:1rem;
 }
 
 .contact-form i {

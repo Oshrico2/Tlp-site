@@ -64,8 +64,11 @@
       <div class="content">
         <h1 class="title">
           כל הפתרונות הכלכליים <br> למשפחה שלכם </h1>
-        <p>תלפיות הינה חברת התכנון הכלכלית והבית שלכם לכל נושאי הכלכלה והפיננסים.<br>
-          החברה מונה כיום כ 1000 מומחים בעלי רישיון ממשרד האוצר לשרותכם ב 20 סניפים בפריסה ארצית.</p>
+        <p class="px-3">תלפיות הינה חברת התכנון הכלכלית והבית שלכם לכל נושאי הכלכלה והפיננסים.<br>
+          החברה מונה כיום כ-1000 מומחים בעלי רישיון ממשרד האוצר לשרותכם ב-20 סניפים בפריסה ארצית.</p>
+        <strong><p class="mb-0 px-5" style="color: #eac278; font-size: xx-large;">בלעדי לחברי אשמורת,<br/> 10% דמי עמלה בהחזרי מס ו-3000 ₪  ביעוץ משכנתא.
+        </p></strong>
+        <img class="my-3 ashmoret-logo" src="./images/ashmoret-logo.jpg" alt="Ashmoret Logo">
 
         <a href="#service" class="btn">השירותים שלנו</a>
       </div>
@@ -105,26 +108,26 @@
       ושגשוג כלכלי לך ולמשפחתך היקרה .</p>
     <div class="services-list row gx-4">
       <div class="services-wrapper col-lg-6 col-md-6">
-        <div class="services">
+        <div class="services servicesMash" >
           <div class="icon">
             <img src="https://tlp-ins.co.il/wp-content/uploads/2021/03/ICONS_talpiot-02.png" alt="">
           </div>
           <h2 class="title">ייעוץ משכנתא</h2>
           <p class="text">
             בניית תמהיל אופטימלי והתאמת החזר חודשי על פי הצורך. </p>
-          <button type="button" class="btn" data-title="יעוץ משכנתא" data-bs-toggle="modal" data-bs-target="#modal1">צור
+          <button type="button" class="btn" data-title="יעוץ משכנתא" data-bs-toggle="modal" data-bs-target="#modal1" id="mashBtn">צור
             קשר</button>
         </div>
       </div>
       <div class="services-wrapper col-lg-6 col-md-6">
-        <div class="services">
+        <div class="services servicesMass">
           <div class="icon">
             <img src="https://tlp-ins.co.il/wp-content/uploads/2021/03/ICONS_talpiot-03.png" alt="">
           </div>
           <h2 class="title">החזרי מס</h2>
           <p class="text">
-            כל משפחה ישראלית כמעט זכאית להחזר מס הבדיקה ללא עלות. </p>
-          <button type="button" class="btn" data-title="החזרי מס" data-bs-toggle="modal" data-bs-target="#modal2">צור
+            כל משפחה ישראלית כמעט זכאית להחזר מס, הבדיקה ללא עלות. </p>
+          <button type="button" class="btn" data-title="החזרי מס" data-bs-toggle="modal" data-bs-target="#modal2" id="massBtn">צור
             קשר</button>
         </div>
       </div>
@@ -183,7 +186,7 @@
               <option value="2">לא</option>
             </select>
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" name="Name" id="floatingPassword" placeholder="שם מלא" required>
+              <input type="text" class="form-control" name="Name" id="floatingInput" placeholder="שם מלא" required>
               <label for="Name">שם מלא</label>
             </div>
             <div class="form-floating">
@@ -192,13 +195,13 @@
               <label for="MailAdress">כתובת מייל</label>
             </div>
             <div class="form-floating">
-              <input type="text" class="form-control" name="PhoneNumber" id="floatingPassword" placeholder="טלפון"
+              <input type="text" class="form-control" name="PhoneNumber" id="floatingInput" placeholder="טלפון"
                 required>
               <label for="PhoneNumber">טלפון</label>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-              <button type="submit" class="btn" name="submit" id="btn">שלח</button>
+              <button type="submit" class="btn" name="submit" id="btn1">שלח</button>
             </div>
           </form>
         </div>
@@ -255,7 +258,7 @@
               <option value="2">לא</option>
             </select>
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" name="Name" id="floatingPassword" placeholder="Password" dir="rtl"
+              <input type="text" class="form-control" name="Name" id="floatingInput" placeholder="Password" dir="rtl"
                 required>
               <label for="Name">שם מלא</label>
             </div>
@@ -265,7 +268,7 @@
               <label for="MailAdress">כתובת מייל</label>
             </div>
             <div class="form-floating">
-              <input type="text" class="form-control" name="PhoneNumber" id="floatingPassword" placeholder="Password"
+              <input type="text" class="form-control" name="PhoneNumber" id="floatingInput" placeholder="Password"
                 required>
               <label for="PhoneNumber" dir="rtl">טלפון</label>
             </div>
@@ -327,6 +330,29 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
+    // const handleMouseOver1 = () =>{
+    //   const btn = document.querySelector("#massBtn");
+    // // Toggle the presence of a CSS class to enable/disable the hover effect
+    // btn.classList.add("btnHover");
+    // console.log(btn.classList);
+    // }
+
+    document.querySelector('.servicesMash').addEventListener('mouseover', function() {
+    document.getElementById('mashBtn').classList.add('btnHover');
+  });
+
+  document.querySelector('.servicesMash').addEventListener('mouseout', function() {
+    document.getElementById('mashBtn').classList.remove('btnHover');
+  });
+
+  document.querySelector('.servicesMass').addEventListener('mouseover', function() {
+    document.getElementById('massBtn').classList.add('btnHover');
+  });
+
+  document.querySelector('.servicesMass').addEventListener('mouseout', function() {
+    document.getElementById('massBtn').classList.remove('btnHover');
+  });
+
     const handleClick = () => {
       const form = document.querySelector('.form1');
       const inputs = form.querySelectorAll('.inputForm');
@@ -345,6 +371,8 @@
       }
 
     }
+
+    
 
     $(document).ready(function () {
       function animateNumbers() {

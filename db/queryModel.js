@@ -1,15 +1,14 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const querySchema = mongoose.Schema({
     name: String,
     email: String,
     phoneNumber: String,
-    subject : String,
+    subject: String,
     message: String,
     createdAt: Date,
-})
+});
 
+const Query = mongoose.model('Query', querySchema);
 
-const Query = mongoose.model('Query',querySchema);
-
-export default Query;
+module.exports = Query;
